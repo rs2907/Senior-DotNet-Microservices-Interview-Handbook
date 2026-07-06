@@ -1,0 +1,191 @@
+Senior-DotNet-Microservices-Interview-Handbook
+│
+├── README.md
+├── LICENSE
+├── .gitignore
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── CODE_OF_CONDUCT.md
+├── Directory.Build.props
+├── Directory.Packages.props
+├── SeniorDotNetInterview.sln
+│
+├── docs
+│
+│   ├── 01-Redis
+│   │      01-Introduction.md
+│   │      02-Architecture.md
+│   │      03-Installation.md
+│   │      04-Redis-Commands.md
+│   │      05-Data-Types.md
+│   │      06-Persistence.md
+│   │      07-Memory-Management.md
+│   │      08-PubSub.md
+│   │      09-Distributed-Lock.md
+│   │      10-Redis-Interview-QA.md
+│   │
+│   ├── 02-DotNet
+│   │      ASPNET-Core.md
+│   │      Dependency-Injection.md
+│   │      Middleware.md
+│   │      Authentication.md
+│   │      Authorization.md
+│   │      Exception-Handling.md
+│   │
+│   ├── 03-Caching
+│   │      Cache-Aside.md
+│   │      Read-Through.md
+│   │      Write-Through.md
+│   │      Cache-Invalidation.md
+│   │      TTL.md
+│   │
+│   ├── 04-Microservices
+│   │      CleanArchitecture.md
+│   │      RepositoryPattern.md
+│   │      CQRS.md
+│   │      MediatR.md
+│   │      API-Gateway.md
+│   │
+│   ├── 05-Azure
+│   │      Azure-App-Service.md
+│   │      Azure-Redis.md
+│   │      Azure-ServiceBus.md
+│   │      Azure-KeyVault.md
+│   │      Azure-Functions.md
+│   │
+│   ├── 06-Docker
+│   │
+│   ├── 07-Kubernetes
+│   │
+│   ├── 08-SystemDesign
+│   │
+│   ├── 09-InterviewQuestions
+│   │
+│   └── Images
+│
+├── src
+│
+│   ├── ApiGateway
+│   │      Gateway.API
+│   │
+│   ├── Services
+│   │
+│   │      Product
+│   │      │
+│   │      ├── Product.API
+│   │      ├── Product.Application
+│   │      ├── Product.Domain
+│   │      ├── Product.Infrastructure
+│   │      └── Product.Tests
+│   │
+│   │      Order
+│   │      │
+│   │      ├── Order.API
+│   │      ├── Order.Application
+│   │      ├── Order.Domain
+│   │      ├── Order.Infrastructure
+│   │      └── Order.Tests
+│   │
+│   │      Customer
+│   │
+│   │      Inventory
+│   │
+│   │      Notification
+│   │
+│   │      Identity
+│
+│   ├── BuildingBlocks
+│   │
+│   │      SharedKernel
+│   │
+│   │      Common
+│   │
+│   │      Caching
+│   │
+│   │      Logging
+│   │
+│   │      Messaging
+│   │
+│   │      Authentication
+│   │
+│   │      Authorization
+│   │
+│   │      HealthChecks
+│   │
+│   │      Contracts
+│
+│   └── Web
+│
+├── infrastructure
+│
+│   ├── docker
+│   │      docker-compose.yml
+│   │      docker-compose.override.yml
+│   │      Dockerfile.Product
+│   │      Dockerfile.Order
+│   │      Dockerfile.Gateway
+│   │
+│   ├── kubernetes
+│   │
+│   │      namespace.yaml
+│   │      redis.yaml
+│   │      sqlserver.yaml
+│   │      gateway.yaml
+│   │      product.yaml
+│   │      order.yaml
+│   │      ingress.yaml
+│   │      configmap.yaml
+│   │      secrets.yaml
+│   │
+│   ├── terraform
+│   │
+│   └── bicep
+│
+├── database
+│
+│   ├── SQL
+│   │      Product.sql
+│   │      Order.sql
+│   │
+│   ├── Migrations
+│   │
+│   └── SeedData
+│
+├── architecture
+│
+│   ├── DrawIO
+│   │
+│   ├── Visio
+│   │
+│   └── PNG
+│
+├── scripts
+│
+│   build.ps1
+│   build.sh
+│   run.ps1
+│   docker.ps1
+│
+├── tests
+│
+│   IntegrationTests
+│
+│   PerformanceTests
+│
+│   LoadTests
+│
+└── .github
+
+    ├── ISSUE_TEMPLATE
+
+    ├── PULL_REQUEST_TEMPLATE.md
+
+    └── workflows
+
+           dotnet-build.yml
+
+           docker.yml
+
+           kubernetes.yml
+
+           azure.yml
